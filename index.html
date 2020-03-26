@@ -3,12 +3,128 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <link rel="shortcut icon" href="assets/images/favicon.ico" />
+    <title>Viviana Garcia | Front-End Web Developer</title>
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/9cc390ed29.js"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/CSS/style.css">
 </head>
 <body>
-    <h1>THIS IS A HEADING OK</h1>
-
-    <p>this is a paragraph</p>
+    <header>
+        <nav class="navbar">
+            <img src="assets/images/name-logo-fiesta.svg" class= "navbar-brand" alt="viviana garcia name logo" width="100px">
+                <div>
+                <ul class="nav">
+                    <li class="nav-item"><a href="#about" class="nav-link">about</a></li>
+                    <li class="nav-item"><a href="#portfolio" class="nav-link">portfolio</a></li>
+                    <li class="nav-item"><a href="#resume" class="nav-link">resume</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link">contact</a></li>
+                </ul>
+                </div>
+        </nav>
+    </header>
+    <div class="jumbotron jumbotron-fluid" id="about">
+        <br>
+        <br>
+        <br>
+        <br>    
+        <br>
+        <br>
+        <br>
+        <div class="col text-about">
+            <div class="row">
+                <h3 id="name-tag">Hi, I'm Viviana Garcia &</h3>
+            </div>
+            <div class="row">
+                <h1>I'm a Front-End Developer</h1>
+            </div>
+            <div class="row socials">
+                <p>Let's Connect:</p> <a href="https://linkedin.com/in/vivianalgarcia" target="_blank"><i class="fab fa-linkedin-in"></i></a><a href="https://github.com/vivgarcia" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+    <!-- portfolio section -->
+    <div id="portfolio">
+        <h2 id="portfolioHeader">Portfolio</h2>
+        <hr class="star-primary">
+        <br>
+        <div class="col portfolio-wrapper">
+            <div>
+                <a href="https://vivgarcia.github.io/Psychic-Game/"><img src="assets/images/portfolio-images/psychic-game-image.png" alt="Psychic Game" class="portfolioImages"></a>
+                <a href="https://vivgarcia.github.io/unit-4-game/"><img src="assets/images/portfolio-images/crystal-collectorrpg.png" alt="Crystal Colletor" class="portfolioImages"></a>
+                <a href="https://vivgarcia.github.io/TriviaGame/"><img src="assets/images/portfolio-images/TriviaGame.png" alt="Trivia Game" class="portfolioImages"></a>
+            </div>
+            <div>
+                <a href="https://vivgarcia.github.io/GifTastic/"><img src="assets/images/portfolio-images/giphy-api.png" alt="Giphy API" class="portfolioImages"></a>
+            </div>
+        </div>
+    </div>
+    <!-- resume section -->
+    <div id="resume">
+        <h2 id="resumeHeader">Resume</h2>
+        <hr class="star-primary">
+        <br>
+        <div class="col skills">
+            <div class="row">
+                <h2>Skills</h2>
+                <hr class="sub-header">
+            </div>
+            <div class="row">
+                <ul>
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                    <li>SASS</li>
+                    <li>JavaScript</li>
+                    <li>Git</li>
+                    <li>Bootstrap</li>
+                </ul>
+            </div>
+        </div>
+        <div class="col skills">
+            <div class="row">
+                <h2>Education</h2>
+                <hr class="sub-header">
+            </div>
+            <div class="row">
+                <dl>
+                    <dt>Northwest Vista College</dt>
+                    <dd>Digital Media A.A.S., May 2020</dd>
+                </dl>
+            </div>
+            <div class="row">
+                <dl>
+                    <dt>University of Texas at Austin</dt>
+                    <dd>Full Stack Developer Certificate, July 2020</dd>
+                </dl>
+            </div>
+        </div>
+        <div class="col">
+            <div class="row">
+                <a href="assets/images/vivianagarcia-resume.pdf" class="button btn" id="download-button" target="_blank" download><i class="fas fa-chevron-circle-down"></i> Download CV</a>
+            </div>
+        </div>
+        
+    </div>
+    <div id="contact">
+        <h2 id="resumeHeader">Contact</h2>
+        <hr class="star-primary">
+        <br>
+        
+    </div>
+    <footer>
+        <p>&copy; 2020 - Viviana Garcia</p>
+    </footer>
+    <!-- Bootstrap JS/jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <!-- custom javascript -->
+    <script src="assets/javascript/script.js"></script>
 </body>
 </html>

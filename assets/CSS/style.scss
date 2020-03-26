@@ -1,0 +1,163 @@
+$fuschia: #EF426F; 
+$teal: #00B2A9;
+$orange: #FF8200;
+$fontStack: 'Montserrat', sans-serif;
+/* SOURCE: https://teamcolorcodes.com/san-antonio-spurs-color-codes/ */
+body{
+    position: relative;
+    font-family: $fontStack;
+}
+nav{
+    background-color: #fff;
+    .navbar-toggler{
+        color: $teal;
+    }
+}
+
+li a {
+    color: $teal;
+    // link styling: https://codepen.io/eehayman/pen/WoWzWd
+    transition: background-size .4s ease;
+    background: linear-gradient(to bottom, transparent 62%, $orange 0) center center/0% 75% no-repeat;
+    font-family: $fontStack;
+    padding: 0 6px 2px 6px;
+    cursor: pointer;
+    letter-spacing: .08rem;
+    &:hover {
+    background-size: 100% 100%;
+    color: $fuschia;
+    }
+    &:active {
+    background-size: 80% 100%;
+    }
+}
+// HERO SECTION
+
+.jumbotron{
+    background-color: $teal;
+    color: #fff;
+    height: 600px;
+    width: 100%;
+}
+#name-tag{
+    -webkit-text-stroke: 1px #fff;
+    color: $teal;
+    font-size: 50px;
+}
+.text-about{
+    i {
+        margin-left: 15px;
+        font-size: 30px;
+        color: #fff;
+        &:hover{
+            color: $fuschia;
+        }
+    }
+}
+h1 {
+    font-weight: 700;
+    font-size: 50px;
+}
+
+.embeddedLink{
+    font-weight: 700;
+    color: $fuschia;
+    text-decoration: none;
+    padding: 5px;
+    font-size: 20px;
+    &:hover{
+        color: #fff;
+        background-color: $orange;
+    }
+}
+// PORTFOLIO SECTION
+#portfolioHeader{
+    text-align: center;
+    color: $orange;
+    font-weight: 700;
+    font-size: 55px;
+}
+.portfolio-wrapper{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.portfolioImages{
+    border-radius: 50%;
+    margin: 10px;
+    width: 350px;
+}
+
+#download-button{
+    border: solid 1px #fff;
+    color: #fff;
+    padding: 10px;
+    &:hover{
+        background-color: #fff;
+        color: $fuschia;
+    }
+}
+// RESUME SECTION
+#resume{
+    background-color: $fuschia;
+    h2{
+        color: #fff;
+        font-weight: 700;
+    }
+    li{
+        color: #fff;
+    }
+    dd {
+        color: #fff;
+    }
+    dt{
+        color: #fff;
+    }
+    .skills{
+        width: 50%;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+        .sub-header{
+                width: 100%;
+                border-top: solid 3px $orange;
+        }
+    }
+}
+#resumeHeader{
+    text-align: center;
+    color: #fff;
+    font-weight: 700;
+    font-size: 55px;
+}
+.star-primary{
+    width: 20%;
+    border-top: solid 3px $teal;
+}
+// CONTACT SECTION
+#contact{
+    background-color: $orange;
+
+}
+footer{
+    text-align: center;
+    margin: 20px 40px;
+    color: rgb(107, 106, 106);
+}
+//tablet size and down
+@media (max-width: 767px){
+    #resume .col{
+        width: 100%;
+    }
+}
+//desktop and bigger
+@media (min-width: 768px){
+    .text-about {
+    text-align: justify;
+    text-justify: inter-word;
+    left: 20%;
+    }
+}
