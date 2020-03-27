@@ -16,20 +16,6 @@ nav{
 
 li a {
     color: $teal;
-    // link styling: https://codepen.io/eehayman/pen/WoWzWd
-    transition: background-size .4s ease;
-    background: linear-gradient(to bottom, transparent 62%, $orange 0) center center/0% 75% no-repeat;
-    font-family: $fontStack;
-    padding: 0 6px 2px 6px;
-    cursor: pointer;
-    letter-spacing: .08rem;
-    &:hover {
-    background-size: 100% 100%;
-    color: $fuschia;
-    }
-    &:active {
-    background-size: 80% 100%;
-    }
 }
 // HERO SECTION
 
@@ -58,7 +44,9 @@ h1 {
     font-weight: 700;
     font-size: 50px;
 }
-
+.link-wrapper{
+    text-align: center;
+}
 .embeddedLink{
     font-weight: 700;
     color: $fuschia;
@@ -68,6 +56,8 @@ h1 {
     &:hover{
         color: #fff;
         background-color: $orange;
+        border-radius: 12px;
+        text-decoration: none;
     }
 }
 // PORTFOLIO SECTION
@@ -89,11 +79,19 @@ h1 {
     margin: 10px;
     width: 350px;
 }
-
+.button-wrapper{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
 #download-button{
     border: solid 1px #fff;
     color: #fff;
     padding: 10px;
+    margin: 20px;
     &:hover{
         background-color: #fff;
         color: $fuschia;
@@ -121,6 +119,19 @@ h1 {
         flex-flow: column wrap;
         justify-content: center;
         align-items: center;
+        float: left;
+        .sub-header{
+                width: 100%;
+                border-top: solid 3px $orange;
+        }
+    }
+    .education{
+        width: 50%;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+        float: left;
         .sub-header{
                 width: 100%;
                 border-top: solid 3px $orange;
@@ -140,7 +151,10 @@ h1 {
 // CONTACT SECTION
 #contact{
     background-color: $orange;
-
+}
+// PORTFOLIO PAGE STYLINGS
+#portfolio-header{
+    text-align: center;
 }
 footer{
     text-align: center;
@@ -159,5 +173,28 @@ footer{
     text-align: justify;
     text-justify: inter-word;
     left: 20%;
+    }
+    .skills{
+        float: none;
+        width: 100%;
+    }
+    .education{
+        float: none;
+        width: 100%;
+    }
+    li a{
+        transition: background-size .4s ease;
+        background: linear-gradient(to bottom, transparent 62%, $orange 0) center center/0% 75% no-repeat;
+        font-family: $fontStack;
+        padding: 0 6px 2px 6px;
+        cursor: pointer;
+        letter-spacing: .08rem;
+        &:hover {
+        background-size: 100% 100%;
+        color: $fuschia;
+        }
+        &:active {
+        background-size: 80% 100%;
+        }
     }
 }
