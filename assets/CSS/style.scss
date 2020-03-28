@@ -56,7 +56,7 @@ h1 {
     &:hover{
         color: #fff;
         background-color: $orange;
-        border-radius: 12px;
+        border-radius: 10px;
         text-decoration: none;
     }
 }
@@ -151,6 +151,12 @@ h1 {
 // CONTACT SECTION
 #contact{
     background-color: $orange;
+    text-align: center;
+    color: #fff;
+    p{
+        font-size: 18px;
+        color: #fff;
+    }
 }
 // PORTFOLIO PAGE STYLINGS
 #portfolio-header{
