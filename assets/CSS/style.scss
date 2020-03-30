@@ -9,9 +9,7 @@ body{
 }
 nav{
     background-color: #fff;
-    .navbar-toggler{
-        color: $teal;
-    }
+    width: 100%;
 }
 
 li a {
@@ -171,6 +169,17 @@ footer{
 @media (max-width: 767px){
     #resume .col{
         width: 100%;
+    }
+    nav{
+        ul{
+            display: block !important;
+        }
+        li a{
+            &:hover{
+                background-color: $teal;
+                color: #fff;  
+            }
+        }
     }
 }
 //desktop and bigger

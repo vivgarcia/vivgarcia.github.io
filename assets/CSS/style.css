@@ -6,10 +6,7 @@ body {
 
 nav {
   background-color: #fff;
-}
-
-nav .navbar-toggler {
-  color: #00B2A9;
+  width: 100%;
 }
 
 li a {
@@ -226,6 +223,13 @@ footer {
 @media (max-width: 767px) {
   #resume .col {
     width: 100%;
+  }
+  nav ul {
+    display: block !important;
+  }
+  nav li a:hover {
+    background-color: #00B2A9;
+    color: #fff;
   }
 }
 
