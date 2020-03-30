@@ -182,6 +182,13 @@ footer{
         }
     }
 }
+.image-wrapper{
+    text-align: center;
+}
+.portfolio-main-image{
+    width: 350px;
+    
+}
 //desktop and bigger
 @media (min-width: 768px){
     .text-about {

@@ -233,6 +233,14 @@ footer {
   }
 }
 
+.image-wrapper {
+  text-align: center;
+}
+
+.portfolio-main-image {
+  width: 350px;
+}
+
 @media (min-width: 768px) {
   .text-about {
     text-align: justify;
