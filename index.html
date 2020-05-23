@@ -9,6 +9,8 @@
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
     <!-- Bootstrap CDN -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
     <!-- Font Awesome CDN -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://kit.fontawesome.com/9cc390ed29.js"></script>
@@ -19,16 +21,21 @@
 </head>
 <body>
     <header>
-        <nav class="navbar">
-            <img src="assets/images/name-logo-fiesta.svg" class= "navbar-brand" alt="viviana garcia name logo" width="100px">
-                <div>
+        <nav class="navbar navbar-expand-lg">
+          <img src="assets/images/name-logo-fiesta.svg" class= "navbar-brand" alt="viviana garcia name logo" width="100px">
+
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"><i class="fas fa-bars" id="navbar-toggler-icon"></i></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+              <div>
                 <ul class="nav">
                     <li class="nav-item"><a href="#about" class="nav-link">about</a></li>
                     <li class="nav-item"><a href="#portfolio" class="nav-link">portfolio</a></li>
                     <li class="nav-item"><a href="#resume" class="nav-link">resume</a></li>
                     <li class="nav-item"><a href="#contact" class="nav-link">contact</a></li>
                 </ul>
-                </div>
+              </div>
         </nav>
     </header>
     <div class="jumbotron jumbotron-fluid" id="about">
@@ -56,18 +63,141 @@
         <h2 id="portfolioHeader">Portfolio</h2>
         <hr class="star-primary">
         <br>
-        <div class="col portfolio-wrapper">
-            <div>
-                <a href="psychic-game.html"><img src="assets/images/portfolio-images/psychic-game-image.png" alt="Psychic Game" class="portfolioImages"></a>
-                <a href="crystal-collector.html"><img src="assets/images/portfolio-images/crystal-collectorrpg.png" alt="Crystal Colletor" class="portfolioImages"></a>
-                <a href="trivia-game.html"><img src="assets/images/portfolio-images/TriviaGame.png" alt="Trivia Game" class="portfolioImages"></a>
+        <div class="container-fluid">
+          
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+              <div class="carousel-inner row  w-100 mx-auto">
+                <div class="carousel-item col-md-4 active">
+                  <!-- psychic game -->
+                  <div class="card">
+                    <img src="http://placehold.it/250x150/FF8200/fff" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h4 class="card-title">Psychic Game</h4>
+                        <p class="card-text">The Psychic game was created using <strong>HTML</strong>, <strong>CSS</strong>, and <strong>JavaScript</strong>. </p>
+                        <a href="https://github.com/vivgarcia/Psychic-Game" target="_blank">
+                            <button class="btn viewCodebtn">View Code <i class="fas fa-code"></i></button></a> 
+                        <a href="https://vivgarcia.github.io/Psychic-Game/" target="_blank">
+                            <button class="btn liveViewBtn">Visit Live Project <i class="fas fa-globe"></i></button>
+                        </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item col-md-4">
+                <!-- crystal collector -->
+                <div class="card">
+                  <img src="http://placehold.it/250x150/FF8200/fff" class="card-img-top" alt="">
+                  <div class="card-body">
+                      <h4 class="card-title">Crystal Collector</h4>
+                      <p class="card-text">Crystal Collector was created using <strong>HTML</strong>, <strong>CSS</strong>, and <strong>JavaScript</strong>.</p>
+                      <a href="https://github.com/vivgarcia/unit-4-game" target="_blank">
+                          <button class="btn viewCodebtn">View Code <i class="fas fa-code"></i></button></a> 
+                      <a href="https://vivgarcia.github.io/unit-4-game/" target="_blank">
+                          <button class="btn liveViewBtn">Visit Live Project <i class="fas fa-globe"></i></button>
+                      </a>
+                </div>
+          </div>
+                </div>
+                <div class="carousel-item col-md-4">
+                    <!-- Trivia Game -->
+                    <div class="card">
+                      <img src="http://placehold.it/250x150/FF8200/fff" class="card-img-top" alt="">
+                      <div class="card-body">
+                          <h4 class="card-title">Trivia Game</h4>
+                          <p class="card-text">The Parks & Recreation trivia game was created using <strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong> and <strong>jQuery</strong>.</p>
+                              <a href="https://github.com/vivgarcia/TriviaGame" target="_blank">
+                              <button class="btn viewCodebtn">View Code <i class="fas fa-code"></i></button></a> 
+                          <a href="https://vivgarcia.github.io/TriviaGame/" target="_blank">
+                              <button class="btn liveViewBtn">Visit Live Project <i class="fas fa-globe"></i></button>
+                          </a>
+                      </div>
+                  </div>
+                </div>
+                <div class="carousel-item col-md-4">
+                  <!-- GifTastic -->
+                <div class="card">
+                  <img src="http://placehold.it/250x150/FF8200/fff" class="card-img-top" alt="">
+                  <div class="card-body">
+                      <h4 class="card-title">GifTastic</h4>
+                      <p class="card-text">GifTastic was created using <strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong>, <strong>jQuery/AJAX</strong> and the <strong>GIPHY API</strong>.</p>
+                          <a href="https://github.com/vivgarcia/GifTastic" target="_blank">
+                          <button class="btn viewCodebtn">View Code <i class="fas fa-code"></i></button></a> 
+                      <a href="https://vivgarcia.github.io/GifTastic/" target="_blank">
+                          <button class="btn liveViewBtn">Visit Live Project <i class="fas fa-globe"></i></button>
+                      </a>
+                  </div>
+              </div>
+              </div>
+                <div class="carousel-item col-md-4">
+                  <!-- Train Scheduler -->
+                  <div class="card">
+                    <img src="http://placehold.it/250x150/FF8200/fff" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h4 class="card-title">Train Scheduler</h4>
+                        <p class="card-text">Train Scheduler was created using <strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong>, <strong>jQuery/AJAX</strong>, <strong>Moment.js</strong> and <strong>Firebase</strong>.</p>
+                            <a href="https://github.com/vivgarcia/Train-Scheduler" target="_blank">
+                            <button class="btn viewCodebtn">View Code <i class="fas fa-code"></i></button></a> 
+                        <a href="https://vivgarcia.github.io/Train-Scheduler/" target="_blank">
+                            <button class="btn liveViewBtn">Visit Live Project <i class="fas fa-globe"></i></button>
+                        </a>
+                    </div>
+                </div>
+                </div>
+                <div class="carousel-item col-md-4">
+                <!-- Beer Run -->
+                <div class="card">
+                  <img src="http://placehold.it/250x150/FF8200/fff" class="card-img-top" alt="">
+                  <div class="card-body">
+                      <h4 class="card-title">Beer Run</h4>
+                      <p class="card-text">Beer Run was created using <strong>HTML</strong>, <strong>Bootstrap</strong>, <strong>CSS/SASS</strong>, <strong>JavaScript</strong>, <strong>jQuery/AJAX</strong>, <strong>Open Brewery API</strong> and <strong>Yelp API</strong>.</p>
+                          <a href="https://github.com/vivgarcia/Group-11-Project" target="_blank">
+                          <button class="btn viewCodebtn">View Code <i class="fas fa-code"></i></button></a> 
+                      <a href="https://vivgarcia.github.io/Group-11-Project/" target="_blank">
+                          <button class="btn liveViewBtn">Visit Live Project <i class="fas fa-globe"></i></button>
+                      </a>
+                  </div>
+              </div>
+                </div>
+                <div class="carousel-item col-md-4">
+                <!-- Bamazon -->
+                <div class="card">
+                  <img src="http://placehold.it/250x150/FF8200/fff" class="card-img-top" alt="">
+                  <div class="card-body">
+                      <h4 class="card-title">Bamazon</h4>
+                      <p class="card-text">Bamazon was created using <strong>Javascript</strong>, <strong>Node.js</strong> & <strong>MySQL</strong>.</p>
+                          <a href="https://github.com/vivgarcia/bamazon" target="_blank">
+                              <button class="btn viewCodebtn">View Code <i class="fas fa-code"></i></button>
+                          </a>    
+                  </div>
+                </div>
+                </div>
+                <div class="carousel-item col-md-4">
+                  <!-- GamerCentral -->
+                  <div class="card">
+                    <img src="http://placehold.it/250x150/FF8200/fff" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h4 class="card-title">GamerCentral</h4>
+                        <p class="card-text">GamerCentral was created using <strong>HTML</strong>, <strong>CSS</strong>, <strong>JS</strong>, <strong>SQL</strong>, <strong>Node.js</strong> & <strong>Express</strong>.</p>
+                            <a href="https://github.com/vivgarcia/project-2" target="_blank">
+                                <button class="btn viewCodebtn">View Code <i class="fas fa-code"></i></button>
+                            </a>    
+                            <a href="https://aqueous-lake-82662.herokuapp.com/signin" target="_blank">
+                                <button class="btn liveViewBtn">Visit Live Project <i class="fas fa-globe"></i></button>
+                            </a>
+                    </div>
+                </div>
+                </div>
+              </div>
+              <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
             </div>
-            <div>
-                <a href="giftastic.html"><img src="assets/images/portfolio-images/giphy-api.png" alt="Giphy API" class="portfolioImages"></a>
-                <a href="train-scheduler.html"><img src="assets/images/portfolio-images/bullet-train.png" alt="Bullet Train" class="portfolioImages"></a>
-                <a href="beerrun.html"><img src="assets/images/portfolio-images/beer-run.png" alt="Beer Run" class="portfolioImages"></a>
-            </div>
-        </div>
+          </div>
+          <br>
     </div>
     <!-- resume section -->
     <div id="resume">
@@ -88,6 +218,11 @@
                     <li>Git</li>
                     <li>Bootstrap</li>
                 </ul>
+                <ul>
+                    <li>Node.js</li>
+                    <li>SQL</li>
+                    <li>Express</li>
+                </ul>
             </div>
         </div>
         <div class="col education">
@@ -100,6 +235,7 @@
                     <dt>Northwest Vista College</dt>
                     <dd>Digital Media A.A.S., May 2020</dd>
                 </dl>
+                
             </div>
             <div class="row">
                 <dl>
@@ -110,7 +246,7 @@
         </div>
         <div class="col">
             <div class="row button-wrapper">
-                <a href="assets/images/vivianagarcia-resume.pdf" class="button btn" id="download-button" target="_blank" download><i class="fas fa-chevron-circle-down"></i> Download CV</a>
+                <a href="assets/images/vgarcia-bc-resume.pdf" class="button btn" id="download-button" target="_blank" download><i class="fas fa-chevron-circle-down"></i> Download CV</a>
             </div>
         </div>
         
@@ -123,7 +259,7 @@
         <p> <i class="fas fa-envelope"></i> viv@vivgarcia.com<br>
             <i class="fas fa-phone"></i> 210-275-1440
         </p>
-        
+        <br>
     </div>
     <footer>
         <p>&copy; 2020 - Viviana Garcia</p>
