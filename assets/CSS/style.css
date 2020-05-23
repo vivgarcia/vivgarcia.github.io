@@ -9,6 +9,13 @@ nav {
   width: 100%;
 }
 
+@media (max-width: 990px) {
+  ul.nav {
+    display: block;
+    text-align: center;
+  }
+}
+
 #navbar-toggler-icon {
   color: #00B2A9;
 }

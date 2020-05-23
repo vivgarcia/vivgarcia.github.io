@@ -11,7 +11,12 @@ nav{
     background-color: #fff;
     width: 100%;
 }
-
+@media (max-width: 990px){
+    ul.nav{
+        display: block;
+        text-align: center;
+    }
+}
 #navbar-toggler-icon{
     color: $teal;
 }
@@ -19,6 +24,7 @@ nav{
 li a {
     color: $teal;
 }
+
 // HERO SECTION
 
 .jumbotron{
